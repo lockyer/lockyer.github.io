@@ -6,7 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width" />
     <title>Rob Lockyer's Resume</title>
-    <link rel="StyleSheet" href="stylesheets/resume.css" type="text/css" />
+    <style>
+	body {
+		font-family:"Arial","sans-serif";
+	}
+
+	#resume {
+	    padding:5em;
+	}
+
+	#candidatesEmail {
+	    float:left;
+	    clear:left;
+	    width:20%;
+	}
+
+	#candidatesGit {
+	    margin-left:20%;
+	    text-align:right;
+	}  
+
+	a {
+	   text-decoration:none; 
+	}
+
+	@media screen and (max-width:600px) {
+		#resume {
+	            padding:0em;
+		}
+
+	 	#candidatesEmail {
+		    float:right;
+	            clear:none;
+	            width:100%;
+		}
+
+		#candidatesGit {
+	            margin-left:0%;
+	            text-align:left;
+		} 
+	}
+
+	#header, h2 {
+	    border-bottom:1px solid black;
+	}
+
+	h2 {
+	    font-size:140%;
+	    margin-bottom:0.1em;
+	    margin-top:0.5em;
+	    font-weight:normal;
+	}
+
+	#candidatesName {
+		font-size:180%;
+		font-weight:bold;
+	}
+
+	#candidatesField {
+		font-size:120%;
+	}
+
+	#contactDetails, h2, 
+	#honorsAndAwards ul li .date,
+	.durationSummary, a {
+		color:gray;
+	}
+
+	.jobSummary,
+	#honorsAndAwards ul li .placement .extra {
+		color:dimgray;
+	}
+
+	@media (min-width:1200px) {
+		#Jobs, #summaryBlurb, #header {
+			float:left;
+			clear:left;
+			width:45%;
+			margin-right:5%;
+		}
+		#honorsAndAwards, #education, #professionalSkills {
+			margin-left:55%;
+		}
+	}
+
+	.title {
+		font-weight:bold;
+		font-size:115%;
+	}
+
+	.job {
+		padding-bottom:1em;
+	}
+
+	ul {
+		margin-top:0em;
+	}
+
+	.university {
+		font-weight:bold;
+	}
+
+	#honorsAndAwards ul li, #honorsAndAwards ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#honorsAndAwards ul li, .skill {
+		padding-bottom: 0.4em;
+	}
+
+	#honorsAndAwards ul li .placement {
+		padding-left: 1em;
+	}
+
+	#honorsAndAwards ul li .placement .extra {
+	    font-style:italic;
+	}
+
+	@media print {
+	    #resume {
+	        margin:0;
+	        padding:0 10%;
+	    }
+
+	    #header {
+	        padding-top:10%;
+	    }
+
+	    #professionalSkills{
+		    page-break-before:always;
+	        padding-top:10%;
+	    }
+	}
+    </style>
     <link rel="shortcut icon" href="favicon.png"/>
     <meta name="description" content="This is the resume of Rob Lockyer, a software developer
     primarily experienced in the games industry using C++, Java and Lua."/>
@@ -28,30 +162,41 @@
 	<div id="candidatesName">Rob Lockyer</div>
 	<div id="candidatesField">Software Developer</div>
 	<div id="contactDetails">
-		<div id="candidatesEmail"><a href="mailto:RobertLockyer@Gmail.Com?Subject=Online%20Resume" target="_top">RobertLockyer@Gmail.Com</a></div>
-		<div id="candidatesGit"><a href="https://github.com/lockyer">GitHub.Com/Lockyer</a></div>
+		<div id="candidatesEmail"><a href="mailto:RobLockyer@Gmail.Com?Subject=Online%20Resume" target="_top">RobLockyer@Gmail.Com</a></div>
+		<div id="candidatesGit"><a href="http://www.roblockyer.com">RobLockyer.Com</a></div>
 	</div>
 </div>
 
 <div id="summaryBlurb">
     <h2>Summary</h2>
-    Over four years of experience developing applications in C++, and Java.
-    Particularly interested applications such as games, mobile apps,
-    simulators, and artistic tools. Great foundation in 3D concepts strengthened 
-    by over three years of experience programming 3D applications.
+    Over five years of experience developing applications in C++, and Java.
+    Proven ability to learn new languages, and tools quickly on the job.
+    Strong sense of design, derived from experience as an amateur artist.
 </div>
 
 <div id="Jobs">
     <h2>Experience</h2>
 
+   <div class="job">
+		<div class="title">Software Engineer at HB Studios</div>
+		<div class="duration">Aug 2013 - Present
+			<span class="durationSummary">(~ 1 Year)</span>
+		</div>
+		<div class="jobSummary">
+	            Worked on porting Madden from vanilla Android to the Kindle Fire. Optimized graphics performance
+	            to make it playable on older Kindles, and smoother on Android devices.
+	            Also did UI development for Madden 15 on XBox One, 360, PS4, and PS3.
+		</div>
+    </div>
+
     <div class="job">
-		<div class="title">Software Developer at Rocket City Studios</div>
+		<div class="title">Software Engineer at Rocket City Studios</div>
 		<div class="duration">May 2011 - June 2013 
 			<span class="durationSummary">(~ 2 Years)</span>
 		</div>
 		<div class="jobSummary">
 			Worked on the level editor, and server for the game Second Chance Heroes. I primarily 
-            focused on improving interactions with the editor's 3D viewport. I developed the tools our
+            focused on improving user interactions with the editor's 3D viewport. I developed the tools our
             designers needed to manage complex scenes, and create compelling environments.
             On the server I largely focused on game logic, scripting, and the client-server interface.
 		</div>
@@ -64,9 +209,8 @@
 		</div>
 		<div class="jobSummary">
 			Worked with a central group to develop and support a multi-platform networking 
-			SDK. I personally worked on enhancing our automated testing framework and 
-			developing GUI screens for manually testing our API. Also worked on various 
-			bug fixes, product maintenance, and support requests.
+			SDK. I personally worked on enhancing our automated testing framework, and 
+			developing GUI screens for manually testing our API.
 		</div>
 	</div>
 
@@ -76,10 +220,7 @@
 			<span class="durationSummary">(3 Terms ~ 1 Year)</span>
 		</div>
 		<div class="jobSummary">
-			Gained a cumulative year of experience writing simulation software in a 
-			professional environment. This software involved 3D graphics, spatial sound 
-			effects, and was constrained by strict real-time requirements. I was tasked with 
-			evaluating 3D engines, developing particle effects, prototyping new functionality, 
+			Tasked with evaluating 3D engines, developing particle effects, prototyping new functionality, 
 			and mentoring new employees.
 		</div>
     </div>
@@ -90,9 +231,7 @@
 			<span class="durationSummary">(1 Term ~ 4 Months)</span>
 		</div>
 		<div class="jobSummary">
-			Worked with a team of network administrators to maintain a network of about two 
-			hundred computers. My work term project consisted of testing this network and 
-			revealing my findings and recommendations in a report and presentation.
+	                      Worked with a team of network administrators to maintain a network of about two hundred computers. 
 		</div>
     </div>
 </div>
@@ -102,53 +241,47 @@
 
 	<div class="skill">Experience developing software for the iPhone and iPad
         <ul>
-        <li>Completed assignments from the iTunes Stanford iOS course, developed a simple graphing calculator in Objective C</li>
-		<li>Currently porting a game from Java over to iOS using a hybrid of Objective C and C++ as well as OpenGL ES</li>
+        <li>Completed assignments from the iTunes Stanford iOS course, developed a simple graphing calculator in Objective-C</li>
+		<li>Ported elements of a game from Java over to iOS using a hybrid of Objective-C and C++ as well as OpenGL ES</li>
+		<li>Used the OpenGL ES Frame Debugger to identify performance bottlenecks</li>
 		</ul>
 	</div>
 
-	<div class="skill">Experience developing for the Xbox 360, and Playstation 3 platforms</div>
+	<div class="skill">
+	Language independent skills and experience include:
+	<ul>
+		<li>Experience with Agile development processes</li>
+		<li>Strong understanding of object oriented design principles</li>
+		<li>Version control systems (Git, Subversion, and Perforce)</li>
+		<li>Experience reading and creating UML diagrams</li>
+		<li>Understanding of and experience using design patterns</li>
+	</ul>
+	</div>
+
 	<div class="skill">
 		Experience with the following C++ libraries:
 		<ul>
-			<li>OGRE (Open-source Graphics Rendering Engine</li>
+			<li>OGRE (Open-source Graphics Rendering Engine)</li>
 			<li>STL (Standard Template Library)</li>
 		</ul>
 	</div>
 
-	<div class="skill">
+		<div class="skill">
 		Experience developing graphical Java applications
 		<ul>
-			<li>Developed two major academic projects in the Java language</li>
 			<li>Significant experience developing 3D Java applications in a professional environment</li>
+			<li>Developed two major academic projects in the Java language</li>
 		</ul>
 	</div>
-
-	<div class="skill">
-		Experience developing C# applications in a professional environment
-		<ul>
-			<li>Developed a framework for testing a C++ library using tests written in C#</li>
-		</ul>
-	</div>
-
-	<div class="skill">
-		Language independent skills and experience include:
-		<ul>
-			<li>Version control systems (Git, Subversion, and Perforce)</li>
-			<li>Strong understanding of object oriented design principles</li>
-			<li>Experience reading and creating UML diagrams</li>
-			<li>Understanding of and experience using design patterns</li>
-		</ul>
-	</div>
-
+	<div class="skill">Console development experience: XBox One, 360, PS4, PS3</div>
+	<div class="skill">Significant experience with Lua, and C# in professional environments</div>
 	<div class="skill">Experience writing websites using HTML, CSS, and PHP</div>
-	<div class="skill">Significant experience with Lua in a professional environment</div>
 </div>
 
 <div id="education">
     <h2>Education</h2>
 	<div class="university">Memorial University of Newfoundland</div>
-	<div>Bachelor's, Computer Engineering, 2005-2011</div>
+	<div>Bachelor of Engineering (Computer), 2005-2011</div>
 	<div>GPA of 3.16 - Cumulative Average of 74</div>
 </div>
 

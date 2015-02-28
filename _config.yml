@@ -11,7 +11,7 @@ title:            'Rob Lockyer'
 tagline:          'Portfolio and Blog'
 description:      'Software Developer, Artist'
 url:              http://www.roblockyer.com
-baseurl:          /hyde
+baseurl:          /
 
 author:
   name:           'Rob Lockyer'

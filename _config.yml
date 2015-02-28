@@ -10,6 +10,12 @@ relative_permalinks: true
 title:            'Rob Lockyer'
 tagline:          'Portfolio and Blog'
 description:      'Software Developer, Artist'
+search_engine_description: >
+  I'm a professional software developer, and amateur
+  artist. I make video games, and tools for game developers. 
+  I've been doing this for over five years; on projects like Madden,
+  and Second Chance Heroes.
+
 url:              http://www.roblockyer.com
 baseurl:          
 

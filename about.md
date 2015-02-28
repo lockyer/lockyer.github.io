@@ -13,4 +13,6 @@ I plan to use this site as a way to improve my writing skills as I document some
  * Linked In: [RobLockyer](https://www.linkedin.com/in/roblockyer "Rob's Linked In")
  
 ## About The Site
-This site is hosted via [GitHub Pages](https://pages.github.com/) using the static site generator [Jekyll](http://jekyllrb.com/), and my own custom fork of the [Hyde](http://hyde.getpoole.com/) theme. I designed the logo myself using Adobe Illustrator. If you notice any issues with the site please let me know. 
+This site is hosted via [GitHub Pages](https://pages.github.com/) using the static site generator [Jekyll](http://jekyllrb.com/), and my own custom fork of the [Hyde](http://hyde.getpoole.com/) theme. I designed the logo myself using Adobe Illustrator. If you notice any issues with the site please let me know.
+
+Using GitHub pages seems to be the most cost effective and secure way to host a blog that I know of, assuming you have the technical skills to maintain it. Which I realize is a big "if", but it works for me. [Prose.io](http://prose.io/) simplifies the posting process so it's really not that different than using something like wordpress.

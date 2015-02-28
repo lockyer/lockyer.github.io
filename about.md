@@ -12,6 +12,6 @@ I plan to use this site as a way to improve my writing skills as I document some
  * Twitter: [@RobLockyer](https://Twitter.com/RobLockyer "Rob's Twitter")
  * Linked In: [RobLockyer](https://www.linkedin.com/in/roblockyer "Rob's Linked In")
  * Love Letter: <br />
-> 105 Cornwallis Street PO Box 1828 <br />
-> Lunenburg, NS B0J 2C0 <br />
-> Canada
+ > 105 Cornwallis Street PO Box 1828 <br />
+ > Lunenburg, NS B0J 2C0 <br />
+ > Canada

@@ -8,6 +8,6 @@ I'm Rob Lockyer; a professional software developer, and amateur artist. I make v
 
 I plan to use this site as a way to improve my writing skills as I document some of my personal projects, and anything else I happen to find interesting. I suppose that makes you my guinea pig, I hope you find the wood shavings to your liking. If you'd like to get in touch you can probably find your prefered method of contact below:
 
-* Email: [RobLockyer@Gmail.com](mailto:RobLockyer@Gmail.com?subject=RobLockyer.com "Rob's Email") 
-* Twitter: [@RobLockyer](https://Twitter.com/RobLockyer "Rob's Twitter")
-* Linked In: [RobLockyer](https://www.linkedin.com/in/roblockyer "Rob's Linked In")
+ * Email: [RobLockyer@Gmail.com](mailto:RobLockyer@Gmail.com?subject=RobLockyer.com "Rob's Email") 
+ * Twitter: [@RobLockyer](https://Twitter.com/RobLockyer "Rob's Twitter")
+ * Linked In: [RobLockyer](https://www.linkedin.com/in/roblockyer "Rob's Linked In")

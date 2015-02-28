@@ -1,95 +1,37 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <title>Rob Lockyer's Portfolio</title>
-    <link rel="stylesheet" href="stylesheets/styles.css"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-    <link rel="shortcut icon" href="favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png">
-    <meta name="apple-mobile-web-app-title" content="Rob Lockyer">
-    <meta name="description" content="Rob Lockyer is a software developer, and visual artist,
-    currently employed as an engineer in the video games industry. He's captivated by the art, 
-    and science of computer graphics. This site is a portfolio of some of his work."/>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-10539273-1', 'roblockyer.com');
-      ga('send', 'pageview');
-    </script>
-    <div class="wrapper">
-      <header>
-        <img src="logo.svg">
-        <h1>Rob Lockyer</h1>
-        <p>Software developer, and visual artist, currently employed as an engineer in the video games industry. 
-        He's captivated by the art, and science of computer graphics. This site is a portfolio of some of his work.</p>
-        <ul>
-          <li><a href="resume.html">View <strong>Resume</strong></a></li>
-          <li><a href="http://www.flickr.com/photos/roblockyer/">View <strong>Artwork</strong></a></li>
-          <li><a href="https://twitter.com/roblockyer">Follow on <strong>Twitter</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>Progeny</h1>
-        <p>A Procedural Planet Generator</p>
-        <iframe src="//player.vimeo.com/video/66109577?color=3399cc" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
-        <p>
-            Progeny was the capstone project for our computer engineering bachelor degree at
-            <a title="Memorial University Official Website" href="http://www.mun.ca/">Memorial University</a>. 
-            It was a four man project involving Chad Levesque, Shawn Josey,
-            <a title="Andrew's personal website." href="http://www.andrewjonascarter.com/">Andrew Carter</a>, 
-            and I. Our class worked with project advisors from relevant industries. A local game studio, 
-            <a href="https://twitter.com/SourceStudio" title="Source Studio Twitter Account">Source Studio</a> 
-            proposed the concept for our project as “a library for procedural generation of 3D art assets for 
-            games”. So we chose to focus on creating large-scale planetary bodies; we felt it would offer a 
-            great demonstration of the strengths of procedural techniques. A big thanks to Source Studio for 
-            use of their game engine, as well as the expert advise of Alex Brown. Above is a video demonstrating 
-            Progeny in action.
-        </p>
-        <p>
-        We were also tasked with presenting this project to peers. Our team came second in the presentation 
-        competition loosing out to what was admittedly a pretty sweet robotics project.
-        </p>
-        
-        <ul>
-            <li><a href="downloads/ProgenyPresentation.pdf">SlideShow</a></li>
-            <li><a href="downloads/ProgenyFinalReport.pdf">Final Report</a></li>
-        </ul>
-        
-        <h1>Cataclysmic Cosmos</h1>
-        <p>Orbital Tower Defence Game</p>
-        <iframe src="//player.vimeo.com/video/76907208?color=3399cc" width="500" height="509" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
-        <p>
-            This is a computer game 
-            <a title="Andrew Carter's personal website." href="http://www.andrewjonascarter.com/" >Andrew Carter</a> 
-            and I developed for our software design course at 
-            <a title="Memorial University's official website." href="http://www.mun.ca">Memorial University</a>. 
-            We developed the game in Java, so it should run on most machines; though we tested it primarily in windows. 
-            I’ve included the game, and some of the documentation we produced so you can get an idea for how we developed it.
-        </p>
-        <ul>
-            <li><a href="downloads/CataclysmicCosmos.zip">Download the game</a></li>
-            <li><a href="downloads/Proposal.pdf">Project Proposal</a></li>
-            <li><a href="downloads/Report-and-Manuel.pdf">Final Report and Manuel</a></li>
-        </ul>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/fluidvids.js"></script>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

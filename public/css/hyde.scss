@@ -4,17 +4,58 @@
  * Global resets
  */
 
-html {
+html, input.button, input.textfield {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+
+input.button, input.textfield {
+  border-radius: 4px;
+}
+
+input.button, input.textfield  {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 6px 12px;
+  -webkit-appearance: none;
+}
+
+$right_div_width: 100px;
+.email_button {
+  float:right;
+  width:$right_div_width;
+  text-align:right;
+}
+
+.email_text {
+  margin-right:$right_div_width;
+}
+
+input.button:hover {
+  background-color: #eee;
+}
+
+input.textfield {
+  width:100%;
+}
+
+.email_signup {
+  margin-bottom:30px;
+}
+
 @media (min-width: 48em) {
-  html {
+  html, .email {
     font-size: 16px;
+  }
+  input.button, input.textfield, label {
+    font-size: 13px;
   }
 }
 @media (min-width: 58em) {
-  html {
+  html, .email {
     font-size: 20px;
+  }
+  input.button, input.textfield, label {
+    font-size: 15px;
   }
 }
 
@@ -79,7 +120,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top:    2rem;
   padding-bottom: 4rem;
 }
 

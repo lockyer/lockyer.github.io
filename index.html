@@ -4,6 +4,9 @@ title: Home
 ---
 
 <div class="posts">
+
+  {% include mailchimp.html %}
+
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">

@@ -27,5 +27,3 @@ This is where Powershell's Invoke-RestMethod comes in:
     
     $json = $payload | ConvertTo-Json
     $response = Invoke-RestMethod -Uri $uri -Method POST -Body $json -ContentType 'application/json'
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.

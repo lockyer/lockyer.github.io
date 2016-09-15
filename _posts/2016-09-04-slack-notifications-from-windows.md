@@ -18,7 +18,7 @@ In the dropdown select a default channel you'd like your automated posts to go t
 ![PostToChannel.png]({{site.baseurl}}/assets/SlackNotifications/PostToChannel.png)
 The next page you get has a bunch of documentation and some settings you can adjust. Most of the settings here are just defaults which can be overridden by your scripts. The only thing we're interested in here at the moment is the **Webhook URL**. Copy it to your clipboard.
 ![URL.png]({{site.baseurl}}/assets/SlackNotifications/URL.png)
-Go to the search bar in Windows 10 by hitting the Windows key and type **Powershell ISE** to open the integrated powershell editor. Hit **File > New** to create your new script. Fill it with the following:
+Go to the search bar in Windows 10 by hitting the Windows key and typing **Powershell ISE** to open the integrated powershell editor. Hit **File > New** to create your new script. Fill it with the following:
 
 ```powershell
 $payload = @{

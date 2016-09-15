@@ -9,9 +9,9 @@ I often execute long running scripts on my development machine and want to get n
 First lets set up the Incoming Webhooks integration in slack. Log into the web app, and click on your team's name in the top left corner. Select **Team settings** from the dropdown.
 ![TeamSettings.PNG]({{site.baseurl}}/assets/SlackNotifications/TeamSettings.PNG)
 In the menu on the left select **Configure Apps**. In the Apps Director search bar at the top search for **Incomming Webhooks**. 
-![Search.PNG]({{site.baseurl}}/assets/SlackNotifications/Search.PNG)
+![Search.png]({{site.baseurl}}/assets/SlackNotifications/Search.png)
 Then hit **Add Configuration**.
-![AddConfiguration.PNG]({{site.baseurl}}/assets/SlackNotifications/AddConfiguration.PNG)
+![AddConfiguration.png]({{site.baseurl}}/assets/SlackNotifications/AddConfiguration.png)
 
 
 

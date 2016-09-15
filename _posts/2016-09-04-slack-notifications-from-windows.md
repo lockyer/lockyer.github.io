@@ -65,4 +65,4 @@ powershell -command .\buildStatus.ps1 https://hooks.slack.com/services/T2C8JRMGD
 
 I'd love to hear about the awesome things you automate after trying this out!
 
-I'm actually pretty excited about Powershell, batch and bash scripting are just about the most obscure programming languages out there short of [LOLCODE](https://en.wikipedia.org/wiki/LOLCODE). So it's great to see a more useful programming interface integrated directly into the OS. Don't get all pedantic on me and call them scripting languages, [that line is nothing but a smudge these days](http://stackoverflow.com/a/17253557).
+I'm actually pretty excited about Powershell, batch and bash scripting are just about the most obscure programming languages out there short of [LOLCODE](https://en.wikipedia.org/wiki/LOLCODE). So it's great to see a more useful programming interface integrated directly into the OS. Don't get all pedantic on me and call them scripting languages, [that line is looking pretty smudged these days](http://stackoverflow.com/a/17253557).

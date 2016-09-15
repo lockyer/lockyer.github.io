@@ -19,7 +19,6 @@ In the dropdown select a default channel you'd like your automated posts to go t
 The next page you get has a bunch of documentation and some settings you can adjust. Most of the settings here are just defaults which can be overridden by your scripts. The only thing we're interested in here at the moment is the **Webhook URL**. Copy it to your clipboard.
 ![URL.png]({{site.baseurl}}/assets/SlackNotifications/URL.png)
 Go to the search bar in Windows 10 by hitting the Windows key and typing **Powershell ISE** to open the integrated powershell editor. Hit **File > New** to create your new script. Fill it with the following, but make sure you relplace the **-Uri** argument with your own **Webhook URL**
-
 ```powershell
 $payload = @{
 	text = 'Hello World'
@@ -27,8 +26,8 @@ $payload = @{
 $json = $payload | ConvertTo-Json
 Invoke-RestMethod -Uri https://hooks.slack.com/services/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 -Method POST -Body $json
 ```
-
-
+In **PowerShell ISE** hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in **Slack**
+![HelloWorld.png]({{site.baseurl}}/assets/SlackNotifications/HelloWorld.png)
 
 
 

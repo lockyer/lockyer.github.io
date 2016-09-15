@@ -13,7 +13,7 @@ First lets set up the Incoming Webhooks integration in slack. Log into the web a
 
 This is where Powershell's `Invoke-RestMethod` comes in: 
 
-![IncommingWebHooks.PNG]({{site.baseurl}}/_posts/IncommingWebHooks.PNG)
+![IncommingWebHooks.PNG](/_posts/IncommingWebHooks.PNG)
 
 
 

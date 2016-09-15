@@ -14,7 +14,7 @@ In the menu on the left select **Configure Apps**. In the **Apps Directory** sea
 ![Search.png]({{site.baseurl}}/assets/SlackNotifications/Search.png)
 Then hit **Add Configuration**.
 ![AddConfiguration.png]({{site.baseurl}}/assets/SlackNotifications/AddConfiguration.png)
-In the dropdown select a default channel you'd like your automated posts to go to, don't worry, you can change this programmatically in the future. Then hit the big green button: **Add Incoming Webhooks integration**
+In the dropdown select a default channel you'd like your automated posts to go to, don't worry, you can change this programmatically in the future. Next hit the big green button: **Add Incoming Webhooks integration**
 ![PostToChannel.png]({{site.baseurl}}/assets/SlackNotifications/PostToChannel.png)
 The next page you get has a bunch of documentation and some settings you can adjust. Most of the settings here are just defaults which can be overridden by your scripts. The only thing we're interested in here at the moment is the **Webhook URL**. Copy it to your clipboard.
 ![URL.png]({{site.baseurl}}/assets/SlackNotifications/URL.png)
@@ -26,13 +26,9 @@ $payload = @{
 $json = $payload | ConvertTo-Json
 Invoke-RestMethod -Uri https://hooks.slack.com/services/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 -Method POST -Body $json
 ```
-In **PowerShell ISE** hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in **Slack**
+In **PowerShell ISE** hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in **Slack**. Make sure you check the right channel!
 ![HelloWorld.png]({{site.baseurl}}/assets/SlackNotifications/HelloWorld.png)
-
-
-
-
-
+You can do a lot more interesting stuff with this once you get the basics working, such as sending different notifications when builds fail or succeed:
 ```powershell
 param (
 	[Parameter(Mandatory=$true)][string]$uri,
@@ -49,11 +45,11 @@ if($success)
 }
 
 $payload = @{
-	username='Visual Studio'
+	username='Compiler'
 	text=$message
 	icon_emoji=$emoji
 }
 
 $json = $payload | ConvertTo-Json
-$response = Invoke-RestMethod -Uri $uri -Method POST -Body $json -ContentType 'application/json'
+$response = Invoke-RestMethod -Uri $uri -Method POST -Body $json
 ```

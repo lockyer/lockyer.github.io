@@ -59,7 +59,7 @@ $response = Invoke-RestMethod -Uri $uri -Method POST -Body $json
 
 You can invoke it from plain old windows shell like so:
 
-```shell
+```
 powershell -command .\buildStatus.ps1 https://hooks.slack.com/services/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 0
 ```
 

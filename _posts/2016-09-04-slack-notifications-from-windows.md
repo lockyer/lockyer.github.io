@@ -30,7 +30,7 @@ Invoke-RestMethod -Uri https://hooks.slack.com/services/T2C8JRMGD/B2C8N1V7F/BzH2
 
 In **PowerShell ISE** hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in **Slack**. Make sure you check the right channel!
 ![HelloWorld.png]({{site.baseurl}}/assets/SlackNotifications/HelloWorld.png)
-You can do a lot more interesting stuff with this once you get the basics working, such as sending different notifications when builds fail or succeed:
+You can do a lot more interesting stuff with this once you get the basics working, such as sending different notifications when builds fail or succeed. This script can be called on the command line with your **Webhook URL** and a `bool` to indicate success or failure:
 
 ```powershell
 param (
@@ -56,3 +56,5 @@ $payload = @{
 $json = $payload | ConvertTo-Json
 $response = Invoke-RestMethod -Uri $uri -Method POST -Body $json
 ```
+
+I'd love to hear about the things you automate after trying this out!

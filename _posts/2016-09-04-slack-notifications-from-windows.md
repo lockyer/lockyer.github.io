@@ -10,7 +10,7 @@ This is where Powershell's `Invoke-RestMethod` comes in.
 
 First lets set up the Incoming Webhooks integration in slack. Log into the web app, and click on your team's name in the top left corner. Select **Team settings** from the dropdown.
 ![TeamSettings.png]({{site.baseurl}}/assets/SlackNotifications/TeamSettings.png)
-In the menu on the left select **Configure Apps**. In the Apps Director search bar at the top search for **Incoming Webhooks**. 
+In the menu on the left select **Configure Apps**. In the **Apps Directory** search bar at the top search for **Incoming Webhooks**. 
 ![Search.png]({{site.baseurl}}/assets/SlackNotifications/Search.png)
 Then hit **Add Configuration**.
 ![AddConfiguration.png]({{site.baseurl}}/assets/SlackNotifications/AddConfiguration.png)

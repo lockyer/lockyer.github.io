@@ -57,4 +57,4 @@ $json = $payload | ConvertTo-Json
 $response = Invoke-RestMethod -Uri $uri -Method POST -Body $json
 ```
 
-I'd love to hear about the things you automate after trying this out!
+I'd love to hear about the awesome things you automate after trying this out!

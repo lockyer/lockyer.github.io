@@ -6,7 +6,7 @@ published: true
 
 I often execute long running scripts on my development machine and want to get notified upon completion. I'd prefer to do this without installing anything extra, because [nobody hates software more than software developers](https://blog.codinghorror.com/nobody-hates-software-more-than-software-developers/). I'm already running slack, so one practical way to do this is by exploiting [Slack Webhooks](https://testteamchatchannel.slack.com/apps/A0F7XDUAZ-incoming-webhooks). Unfortunately, all [Slack's examples for web hooks](https://api.slack.com/incoming-webhooks)  use [cURL](https://en.wikipedia.org/wiki/CURL) and I'm developing on Windows 10. Certianly, there are solutions for getting cURL on windows, but I'd prefer something that works on a fresh install. Surely there's a native solution.
 
-This is where Powershell's `Invoke-RestMethod` comes in.
+This is where Powershell's [Invoke-RestMethod](https://technet.microsoft.com/en-us/library/hh849971.aspx) comes in. You can ignore that link for now, I have no idea why Microsoft's documentation is always so terrible...
 
 First lets set up the Incoming Webhooks integration in slack. Log into the web app, and click on your team's name in the top left corner. Select **Team settings** from the dropdown.
 ![TeamSettings.png]({{site.baseurl}}/assets/SlackNotifications/TeamSettings.png)

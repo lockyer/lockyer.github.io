@@ -28,3 +28,6 @@ disqus_shortname: roblockyer
 
 sass:
     style: :compressed
+
+gems:
+  - jekyll-feed

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slack Notifications
+title: Automatic Slack Notifications from Windows
 published: true
 ---
 

@@ -14,7 +14,7 @@ Then hit **Add Configuration**.
 ![AddConfiguration.png]({{site.baseurl}}/assets/SlackNotifications/AddConfiguration.png)
 In the dropdown select a default channel you'd like your automated posts to go to, don't worry, you can change this programmatically in the future. Next hit the big green button: **Add Incoming Webhooks integration**
 ![PostToChannel.png]({{site.baseurl}}/assets/SlackNotifications/PostToChannel.png)
-The next page you get has documentation and some settings you can adjust. Most of the settings here are just defaults which can be overridden by your scripts. The only thing we're interested in here at the moment is the **Webhook URL**. Copy it to your clipboard.
+The next page you get has documentation and some settings you can adjust. Most of the settings here are just defaults which can be overridden by your scripts. The only thing we're interested in at the moment is the **Webhook URL**. Copy it to your clipboard.
 ![URL.png]({{site.baseurl}}/assets/SlackNotifications/URL.png)
 Go to the search bar in Windows 10 by hitting the Windows key and typing **Powershell ISE** to open the integrated powershell editor. Hit **File > New** to create your new script. Fill it with the following, but make sure you relplace the **-Uri** argument with your own **Webhook URL**
 

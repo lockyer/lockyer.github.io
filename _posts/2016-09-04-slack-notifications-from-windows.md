@@ -6,7 +6,7 @@ published: true
 
 I often execute long running scripts on my development machine and want to get notified when their done, even when I'm not in the room. I'd prefer to do this without installing anything extra, because [nobody hates software more than software developers](https://blog.codinghorror.com/nobody-hates-software-more-than-software-developers/). I'm already running Slack, so one practical way to do this is by exploiting [Slack Webhooks](https://testteamchatchannel.slack.com/apps/A0F7XDUAZ-incoming-webhooks). Unfortunately, all [Slack's examples for web hooks](https://api.slack.com/incoming-webhooks)  use [cURL](https://en.wikipedia.org/wiki/CURL) and I'm developing on Windows 10. There are solutions for getting cURL on Windows, but I'd prefer something that works on a fresh install. This is where Powershell's [Invoke-RestMethod](https://technet.microsoft.com/en-us/library/hh849971.aspx) comes in.
 
-First, lets set up the **Incoming Webhooks** integration in slack. Log into the web app, and click on your team's name in the top left corner. Select **Team settings** from the dropdown.
+First, lets set up the _Incoming Webhooks_ integration in slack. Log into the web app, and click on your team's name in the top left corner. Select **Team settings** from the dropdown.
 ![TeamSettings.png]({{site.baseurl}}/assets/SlackNotifications/TeamSettings.png)
 In the menu on the left select **Configure Apps**. In the **Apps Directory** search bar at the top search for **Incoming Webhooks**. 
 ![Search.png]({{site.baseurl}}/assets/SlackNotifications/Search.png)
@@ -26,9 +26,9 @@ $json = $payload | ConvertTo-Json
 Invoke-RestMethod -Uri https://hooks.slack.com/services/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 -Method POST -Body $json
 ```
 
-In **PowerShell ISE** hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in **Slack**. Make sure you check the right channel!
+In _PowerShell ISE_ hit the green **Run Script** button to test your script out, you should get **ok** as a return value, and you should see your message in _Slack_. Make sure you check the right channel!
 ![HelloWorld.png]({{site.baseurl}}/assets/SlackNotifications/HelloWorld.png)
-You can do a lot more interesting stuff with this once you get the basics working, such as sending different notifications when builds fail or succeed. This script can be called on the command line with your **Webhook URL** and a `bool` to indicate success or failure:
+You can do a lot more interesting stuff with this once you get the basics working, such as sending different notifications when builds fail or succeed. This script can be called on the command line with your _Webhook URL_ and a `bool` to indicate success or failure:
 
 ```powershell
 param (

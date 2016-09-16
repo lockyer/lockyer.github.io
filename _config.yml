@@ -30,4 +30,4 @@ sass:
     style: :compressed
 
 gems:
-  - jekyll-feed
+    jekyll-feed

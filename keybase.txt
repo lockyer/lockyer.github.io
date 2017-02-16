@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/lockyer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://roblockyer.com
+  * I am lockyer (https://keybase.io/lockyer) on keybase.
+  * I have a public key with fingerprint 8AC6 5E2D 8578 1564 F000  A48C 7D04 E55C 42ED 095F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120a0d9badc9f8e173ac8a7f21c64d2889549fcea427845238972769a4cc3a417190a",
+            "fingerprint": "8ac65e2d85781564f000a48c7d04e55c42ed095f",
+            "host": "keybase.io",
+            "key_id": "7d04e55c42ed095f",
+            "kid": "01016db54fa8680de486844968f429bec3553a21b57fe045cc49b71983ec868bb39c0a",
+            "uid": "1ec9d12e30d14955696adc3a66c08a19",
+            "username": "lockyer"
+        },
+        "service": {
+            "hostname": "roblockyer.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1487207014,
+    "expire_in": 157680000,
+    "prev": "e87c010d0ee93b4f17eb386a6bff2c231c074e0544addfba4fd4b34718e09580",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMNvAnicbZJ7UFRVAMaXlwrxCtBxUdy6M4AzbOt9nPtas9QMMiYabEw0lp17zz13
+uS3sXfcVqEgOQill4KSLDygaTVGmUGYwHir0hNWCMYhGLZghsGxErCkTxbrL4H+d
+f86cc37fd77zzfkyJkwXFVIWPp6/9lakNeRSj9+ryzs2LW/HRFUqxczbMTuanVCR
+hNweq12RMDOGEyQu4BIvChLkZQ4RLCVATmBlkoAMkEiO42nAyxAJgGQ5QJMUx7Mk
+y/ACgJASAMESPC5gRkxWHDbkcroUh0ez5QTI0IiUOJrlCJoBMo7jAuAgK+EA0TQE
+JJJwnpY1YaHqDiq0cKLgRiZF1fa0hXU23v/wj3LjBCOJNJAFjuFwCQFtAoBnOBmQ
+vIggRdOUQBIizcoIBzSEgBe1rByFoEaKIsXD2dzeWTsCQV4iSEThEgF4mmZ4RiuE
+EhgG4pxA8EHQjVwOoRhpdJEK7aXIhZUZMW3Tp0AU7DX4kDnApYpzjAmqxZrY6VI9
+KlSLtLNCj8dpDko9pc4g+wYSrXMuVlFxSFqPmsCHXG5FdWBmQiOhRwnaEoBjSZzF
+CWDEUIlTcSGrEiRoVmtAG8FrkE+zRBwLtYIkHCGeEoFMsEikOEZgRFkmIUkREGcB
+wmkABEmSRQHIEhApwBIc0krmcCz4rq0OFTPzWkzBplm6FZtD8HhdCCv7vCc/XBcS
+pZsXERr8X7qoyPhHv25eTNzDJ5Onw1ccKE67dnBhSvtI9NspGYlX8F0quWig5fsc
+PT31c8l1emjmxX+m+w0/Pk2kbZ1/OXA0p+FsXlog9pB6oy2namcf11q/u7zG1IC9
+/7W8u35bgf3WvaaSpS1NdRkx8lijxbDicHJrD2x9J7K6ZOjMsvaJpInGO/v3BJa8
+e+QtW+G6a8st3fk/tP9ywmQ78+HSn2pvW1ZX24eeoYYjfEfXZPl/TXwt/dCmrKxT
+XcO99pHc2+Uzi9Hk4Zb18uXHBqMff6GPW1X+94DxAmg73qb/RH6z6ptAcpIxfuzS
+waaeuyUJDQHDvZZ831RzVefF7v7mV052ZxwzjI58HJFqcXUpX/Wethg6Xt8xEF1d
+UFnfmbR5ZfOamvnDFfePn7f5lTuWjlh7qnkyCqzck06ZMz81loYRub4FXaF9uSlb
+rt5tiGnuWVi5JPu53GWLBitaeotNYaeeGhwf+mKjMrlDXxeb8++Gnf2cSa68vy/1
+ZnhXJ39k1RO1C4q9o9su6KuvJPyWy9dk6ytao69OjHt187xVv5/NdL60UbX3Z78c
+V8skPvtBUrf73OTJBDW9aD03s2nXt+fajcPLRyP3qpknNnc41tYkFaH3Toe/Wrhl
+w5j/wM3Gz0Kv7+/YG33+o3hD7QOm7jvTXw8LWP1UnLs184HfXxb151iernfkxsWA
+i9m3mnF6n8+z/LG49z94E7rA
+=mS+2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lockyer
+
+==================================================================
